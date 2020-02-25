@@ -1,0 +1,1 @@
+alert("minha paginas javascripts");
