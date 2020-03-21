@@ -24,21 +24,21 @@
 		<main>
 			<form>
 				<label for="nomesobrenome">Nome e Sobrenome </label>
-				<input type="text" id="nomesobrenome" class="input-padrao" >
+				<input type="text" id="nomesobrenome" class="input-padrao" required="" placeholder="seuemai@dominio.com">
 
 				<label for="email">e-mail </label>
-				<input type="text" id="email" class="input-padrao" >
+				<input type="email" id="email" class="input-padrao" required="" >
 
                	<label for="telefone">telefone </label>
-				<input type="text" id="telefone" class="input-padrao" >
+				<input type="tel" id="telefone" class="input-padrao" required="" placeholder="(xx) xxxxx-xxxx">
 
 
 				 <label for="mensagem">Mensagem</label>
-				 <textarea cols="70" rows="10" id="mensagem" class="input-padrao">
+				 <textarea cols="70" rows="10" id="mensagem" class="input-padrao" required="">
 				 	
 				 </textarea>
                
-                <input type="submit" value="Enviar formulario">
+             
                  
                   <div> 
                 <p>Como prefere nosso contato</p>
@@ -49,12 +49,23 @@
                  <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone</label>
                 
 
-                <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp">Whatsapp</label>
+                <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked="">Whatsapp</label>
                 
                </div>
+               <div>
+                   <p>Qual horario prefere ser atendido?</p>
 
-               <label class="checkbox"><input type="checkbox"> Gostaria de receber nossas novidade por e-mail?</label>
+                   <select>
+               	       <option>Manhã</option>
+               	        <option>Tarde</option>
+               	        <option>Noite</option>
+                    </select>
 
+                </div>    
+
+               <label class="checkbox"><input type="checkbox">Gostaria de receber nossas novidades por email?</label>
+
+				<input type="submit" value="Enviar formulário">
 			</form>
 
 		</main>
